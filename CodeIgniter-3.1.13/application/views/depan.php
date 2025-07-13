@@ -21,8 +21,8 @@
             <tr><th>No. Kamar</th><th>Harga Sewa</th></tr>
             <?php foreach($kamar_kosong as $kamar): ?>
                 <tr>
-                    <td><?= htmlspecialchars($kamar->no_kamar) ?></td>
-                    <td>Rp <?= number_format($kamar->harga_sewa,0,',','.') ?></td>
+                    <td><?= htmlspecialchars($kamar->nomor) ?></td>
+                    <td>Rp <?= number_format($kamar->harga,0,',','.') ?></td>
                 </tr>
             <?php endforeach; ?>
         </table>
