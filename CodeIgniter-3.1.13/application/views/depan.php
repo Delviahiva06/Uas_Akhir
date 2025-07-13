@@ -41,12 +41,12 @@
 
         <h2 class="section-title">Kamar Terlambat Bayar</h2>
         <table>
-            <tr><th>No. Kamar</th><th>Nama Penghuni</th><th>Tanggal Bayar Terakhir</th></tr>
+            <tr><th>No. Kamar</th><th>Nama Penghuni</th><th>Tanggal Masuk</th></tr>
             <?php foreach($kamar_terlambat as $row): ?>
                 <tr>
-                    <td><?= htmlspecialchars($row->no_kamar) ?></td>
+                    <td><?= htmlspecialchars($row->nomor) ?></td>
                     <td><?= htmlspecialchars($row->nama) ?></td>
-                    <td><?= htmlspecialchars($row->tgl_bayar_terakhir) ?></td>
+                    <td><?= htmlspecialchars($row->tgl_masuk) ?></td>
                 </tr>
             <?php endforeach; ?>
         </table>
